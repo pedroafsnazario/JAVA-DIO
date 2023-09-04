@@ -1,30 +1,31 @@
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         
-        //Ternário '?' e ':'
-        // forma resumida para definir uma condição e escolher por um dentre dois ou mais valores.
-        // é como se fosse um 'IF/ELSE' simplificado
-        // <Expressao Condicional> ? <Caso Condição seja true> : <Caso Condição seja falsa>.
-        //pode ser usado com string, ints.. booleans..
+     //Relacionais
+     //avaliam relação entre duas variaveis ou expressoes
+     //definem se o operando à esquerda é igual, diferente, menor, menor ou igual, etc.
+     //retornam um valor booleano como resultado
+     // '==' IGUAL '!=' DIFERENÇA
+     // '>' maior '>=' maior ou igual
+     // '<' menor '<=' menor ou igual
+     // é possivel usar esses operadoes em condições e loops até no Sout's porém tem que fazer com cautela :]
+     //existe também a operação 'equals' boa para texto e strings e objetos -> 
+     //System.out.println(string1.equals(string2)); a resposta é boolean.
 
-        int a, b;
-        
+     int numero1 = 1;
+     int numero2 = 2;
 
-        a = 6;
-        b = 6;
-        
-        String resultado = a==b ? "verdadeiro" : "falso";
-        System.out.println(resultado);
+     boolean simNao = numero1 == numero2;
 
-/* 
-        if (a==b){
-            resultado = "verdadeiro";
-        }
-        else {
-            resultado = "falso";
-        }
-    System.out.println(resultado);
-*/
+     System.out.println("numero1 é igual a numero2? " + simNao);
+
+     simNao = numero1 != numero2;
+
+     System.out.println("numero1 é diferente a numero2? " + simNao);
+
+     simNao = numero1 < numero2;
+
+     System.out.println("numero1 é menor que numero2? " + simNao);
 
     }
 }
