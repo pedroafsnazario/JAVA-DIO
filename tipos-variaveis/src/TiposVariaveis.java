@@ -1,17 +1,14 @@
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         
-        //uma variavel pode ser declarado e logo após ter seu valor alterado
-        int numero = 1;
+        //Operadores.
+        //'=' aplica um valor a uma variavel
+        //aritmeticos -> + - / * (soma, subtrair, dividir, multiplicar). % (modulo).
+        //é possivel fazer variaveis complexas cm estes operadores.
+        // se usar '+' em texto, ele vai fazer a junção dos textos.
 
-        numero = 2;
-        System.out.println(numero);
-        //como fazer uma variavel que nunca pode mudar de valor? -> Variaveis e Constantes
-        //use o valor 'final' ao inicio de uma declaração de variavel
-
-        //final double VALOR_DE_PI = 3.14;
-
-        //VALOR_DE_PI = 10.187; Isso resulta em um erro "final canot be assigned a different value"
+        String nomeCompleto = "LINGUAGEM" + "JAVA";
+        System.out.println(nomeCompleto);
 
 
     }
