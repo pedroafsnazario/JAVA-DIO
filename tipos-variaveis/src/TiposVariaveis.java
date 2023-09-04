@@ -1,24 +1,30 @@
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         
-        int numero = 5;
-        // x repeticao (incrementações e decrementações).
-        //operador de incremento funciona em certas ocasioes (como no sout).
-        // System.out.println(++ numero); 
+        //Ternário '?' e ':'
+        // forma resumida para definir uma condição e escolher por um dentre dois ou mais valores.
+        // é como se fosse um 'IF/ELSE' simplificado
+        // <Expressao Condicional> ? <Caso Condição seja true> : <Caso Condição seja falsa>.
+        //pode ser usado com string, ints.. booleans..
 
-        //numero = numero + 2; para abreviar ->
-        numero++; // igual a numero = numero + 1;
-
-        System.out.println(numero); // gera '6'.
-
-        //essas funcionalidades são iguais para a função decremental!!
-
-
-        //inversão '!'
-
-        boolean variavel = true;
-        System.out.println(!variavel); // fica como falsa.
-        //outro metodo é -> variavel = !variavel;
+        int a, b;
         
+
+        a = 6;
+        b = 6;
+        
+        String resultado = a==b ? "verdadeiro" : "falso";
+        System.out.println(resultado);
+
+/* 
+        if (a==b){
+            resultado = "verdadeiro";
+        }
+        else {
+            resultado = "falso";
+        }
+    System.out.println(resultado);
+*/
+
     }
 }
