@@ -1,31 +1,29 @@
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         
-     //Relacionais
-     //avaliam relação entre duas variaveis ou expressoes
-     //definem se o operando à esquerda é igual, diferente, menor, menor ou igual, etc.
-     //retornam um valor booleano como resultado
-     // '==' IGUAL '!=' DIFERENÇA
-     // '>' maior '>=' maior ou igual
-     // '<' menor '<=' menor ou igual
-     // é possivel usar esses operadoes em condições e loops até no Sout's porém tem que fazer com cautela :]
-     //existe também a operação 'equals' boa para texto e strings e objetos -> 
-     //System.out.println(string1.equals(string2)); a resposta é boolean.
+     //Lógicos
+     //permite criar expressões logicas maiores (boas para utilizar em condições e loops)
+     // '&&' operador logico 'E'
+     // '||' operador logico 'OU'
 
-     int numero1 = 1;
-     int numero2 = 2;
+     boolean condicao1 = true;
+     boolean condicao2 = true;
 
-     boolean simNao = numero1 == numero2;
+     if(condicao1 && condicao2){
+        System.out.println("ambas condicoes são verdadeiras");
+     }
+     if(condicao1 && ( 7 > 4 )){
+        System.out.println("o valor booleano e a relação são verdadeiras");
+     }
+     else if(condicao1 || condicao2){
+        System.out.println("uma das condições é verdadeira");
+     }
+     else{
+        System.out.println("nenhuma delas é verdadeira");
+     }
 
-     System.out.println("numero1 é igual a numero2? " + simNao);
+     System.out.println("termino de execucao");
 
-     simNao = numero1 != numero2;
-
-     System.out.println("numero1 é diferente a numero2? " + simNao);
-
-     simNao = numero1 < numero2;
-
-     System.out.println("numero1 é menor que numero2? " + simNao);
 
     }
 }
