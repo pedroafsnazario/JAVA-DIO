@@ -2,14 +2,18 @@ public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         
         //Operadores.
-        //'=' aplica um valor a uma variavel
-        //aritmeticos -> + - / * (soma, subtrair, dividir, multiplicar). % (modulo).
-        //é possivel fazer variaveis complexas cm estes operadores.
-        // se usar '+' em texto, ele vai fazer a junção dos textos.
+        //Unários, utilizados com os aritiméticos
+        //+ ou - (torna um valor positivo ou negativo).
+        // ++ ou -- (incrementa ou decrementa valores).
+         int numero = 5;
+          System.out.println(- numero); // gera '-5'.
+          System.out.println(numero); // gera '5'.
 
-        String nomeCompleto = "LINGUAGEM" + "JAVA";
-        System.out.println(nomeCompleto);
+          //outro metodo de tornar um valor negativo seria
+          // numero = - numero; --> numero = numero * -1 (para converter pro positivo)
 
 
+
+        
     }
 }
