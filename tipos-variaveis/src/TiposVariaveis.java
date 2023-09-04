@@ -1,14 +1,17 @@
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        double salarioMinimo = 2500.33;
-        //float precisa ter um 'f'ou'F' no final do valor.
-        //o mesmo se vale pro long (L).
-        //Importante: Java é fortemente "tipado". exemplo:
-        short numeroCurto = 1;
-        int numeroNormal = numeroCurto;
-        short numeroCurto2 = (short) numeroNormal;
-        //short numeroCurto2 = numeroNormal; //nao funciona pois short nao aceita int! apesar de ser 1 o valor é recusado
+        
+        //uma variavel pode ser declarado e logo após ter seu valor alterado
+        int numero = 1;
+
+        numero = 2;
+        System.out.println(numero);
+        //como fazer uma variavel que nunca pode mudar de valor? -> Variaveis e Constantes
+        //use o valor 'final' ao inicio de uma declaração de variavel
+
+        //final double VALOR_DE_PI = 3.14;
+
+        //VALOR_DE_PI = 10.187; Isso resulta em um erro "final canot be assigned a different value"
 
 
     }
