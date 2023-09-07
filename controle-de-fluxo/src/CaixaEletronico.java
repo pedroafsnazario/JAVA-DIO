@@ -7,10 +7,15 @@ public class CaixaEletronico {
             saldo = saldo - valorSolicitado;
 
             System.out.println("Você retirou de sua conta " + valorSolicitado + " Reais.");
+            System.out.println("Agora tem " + saldo + " Reais de saldo na sua conta.");
+        }
+        else {
+
+            System.out.println("Valor muito alto em relação ao saldo disponível de " +saldo+ " em sua conta!");
         }
 
         
-        System.out.println("Agora tem " + saldo + " Reais de saldo na sua conta.");
+        
     }
     
 }
